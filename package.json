@@ -1,0 +1,29 @@
+{
+  "name": "library-management-system",
+  "version": "1.0.0",
+  "description": "A Library Management System with Admin and Student sections, authentication, OTP, and email notifications.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build:css": "tailwindcss -i ./styles.css -o ./output.css --minify"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.7",
+    "nodemailer": "^6.9.11"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "nodemon": "^3.1.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.3.3"
+  }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <title>Library Management System | About</title>
+</head>
+<body>
+    <nav class="bg-slate-800 shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-400">📚 LMS</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-teal-200 text-2xl hover:text-[#8ec7da]"><i class="bi bi-house"></i></a>
+                    <!-- <a href="resource.html" class="text-gray-600 hover:text-[#3f4243]" target="_blank">Resources</a>
+                    <a href="about.html" class="text-gray-600 hover:text-[#3f4243]">About us</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-[#3f4243]">Contact</a> -->
+                </div>
+                <!-- <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-600"><i class="bi bi-list text-2xl"></i></button>
+                </div> -->
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-teal-600"><i class="bi bi-house"></i></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="bg-slate-800 min-h-screen pt-28 pb-16 flex flex-col items-center">
+      <div class="max-w-3xl w-full">
+        <div class="bg-white/90 dark:bg-gray-900 rounded-2xl shadow-2xl p-8 mb-10 border border-blue-300">
+          <h1 class="text-4xl font-extrabold text-blue-700 dark:text-blue-300 mb-4 text-center">About Library Management System</h1>
+          <p class="text-lg text-gray-700 dark:text-gray-200 mb-4 text-center">A modern, user-friendly platform for managing library resources, empowering both students and admins with seamless book management, notifications, and analytics.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            <div class="bg-blue-50 dark:bg-blue-950 rounded-xl p-6 shadow flex flex-col items-center">
+              <h2 class="text-2xl font-bold text-blue-600 dark:text-blue-200 mb-2">For Students</h2>
+              <ul class="text-gray-700 dark:text-gray-100 list-disc pl-5 text-base">
+                <li>Sign up and log in securely (password & OTP)</li>
+                <li>Issue books online with due date and payment tracking</li>
+                <li>Receive email notifications for issued books</li>
+                <li>Modern dashboard to view all issued books</li>
+                <li>Personalized experience with avatars and notifications</li>
+              </ul>
+            </div>
+            <div class="bg-green-50 dark:bg-green-950 rounded-xl p-6 shadow flex flex-col items-center">
+              <h2 class="text-2xl font-bold text-green-600 dark:text-green-200 mb-2">For Admins</h2>
+              <ul class="text-gray-700 dark:text-gray-100 list-disc pl-5 text-base">
+                <li>Admin authentication (password & OTP)</li>
+                <li>Track all students and issued books</li>
+                <li>View and manage student records</li>
+                <li>Dashboard with analytics and quick actions</li>
+                <li>Role-based access and secure management</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-8">
+            <h3 class="text-xl font-semibold text-blue-800 dark:text-blue-200 mb-2">Tech Stack</h3>
+            <div class="flex flex-wrap gap-3 justify-center">
+              <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-semibold">Node.js</span>
+              <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-semibold">Express</span>
+              <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-semibold">MySQL</span>
+              <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-semibold">HTML</span>
+              <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-semibold">Tailwind CSS</span>
+              <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-semibold">JavaScript</span>
+            </div>
+          </div>
+          <div class="mt-8">
+            <h3 class="text-xl font-semibold text-blue-800 dark:text-blue-200 mb-2">Key Features</h3>
+            <ul class="list-disc pl-5 text-gray-700 dark:text-gray-100 text-base">
+              <li>Unified, modern UI with dark mode and Inter font</li>
+              <li>Separate dashboards and authentication for students and admins</li>
+              <li>Animated notifications and session persistence</li>
+              <li>Book issue and return management with email alerts</li>
+              <li>Admin analytics and student record management</li>
+              <li>Secure, role-based access throughout the system</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Team Cards -->
+      <div class="flex flex-col md:flex-row gap-8 justify-center items-center mb-12 w-full max-w-4xl">
+        <div class="flex-1 bg-gradient-to-r from-blue-400 to-blue-600 dark:from-blue-800 dark:to-blue-900 rounded-xl shadow-lg p-6 flex items-center justify-center min-h-[100px]">
+          <span class="text-white text-2xl font-bold tracking-wide">Harsha Kumari</span>
+        </div>
+        <div class="flex-1 bg-gradient-to-r from-green-400 to-green-600 dark:from-green-800 dark:to-green-900 rounded-xl shadow-lg p-6 flex items-center justify-center min-h-[100px]">
+          <span class="text-white text-2xl font-bold tracking-wide">Kumar Kaushik</span>
+        </div>
+        <div class="flex-1 bg-gradient-to-r from-blue-400 to-blue-600 dark:from-blue-800 dark:to-blue-900 rounded-xl shadow-lg p-6 flex items-center justify-center min-h-[100px]">
+          <span class="text-white text-2xl font-bold tracking-wide">Juel Pramanik</span>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-white/90 dark:bg-gray-800 text-center py-6 shadow-inner w-full border-t border-blue-200 dark:border-gray-700">
+      <div class="max-w-4xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl font-bold text-blue-400">📚 LMS</span>
+            <span class="text-gray-700 dark:text-gray-200 font-semibold">Library Management System</span>
+          </div>
+          <div class="text-gray-500 dark:text-gray-400 text-sm">&copy; 2025 Library Management System. All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
+    <script>
+        document.getElementById('section')
+        .addEventListener('mouseover', function() {
+            let updating = document.getElementById('sectionChange');
+            updating.textContent = "Updating Soon..."
+        });
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
