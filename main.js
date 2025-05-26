@@ -6,7 +6,6 @@ function showSection(section) {
   document.getElementById('admin-section').classList.add('hidden');
   if (section === 'student') {
     document.getElementById('student-section').classList.remove('hidden');
-    // Always use session: if user is logged in as student, go to dashboard, else login
     const user = JSON.parse(localStorage.getItem('lms_user'));
     if (user && user.role === 'student') {
       showStudentForm('dashboard');
@@ -288,8 +287,7 @@ document.getElementById('issueBookForm').onsubmit = async function(e) {
   try {
     const availabilityRes = await fetch(`${API_BASE_URL}/api/books/suggest?q=${encodeURIComponent(selectedBook.title)}`);
     const suggestions = await availabilityRes.json();
-    const bookDetails = suggestions.find(b => b.id === parseInt(selectedBookIdInput.value));
-    
+    const bookDetails = suggestions.find(b => b.book_id === selectedBookIdInput.value);
     if (!bookDetails) {
       showNotification({ message: 'Book not found.', type: 'error' });
       return;

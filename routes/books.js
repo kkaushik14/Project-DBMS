@@ -20,7 +20,7 @@ router.get('/', async (req, res) => {
 router.get('/suggest', async (req, res) => {
   const q = req.query.q || '';
   const [rows] = await pool.execute(
-    'SELECT id, title FROM books WHERE available > 0 AND title LIKE ? LIMIT 10',
+    'SELECT id, book_id, title FROM books WHERE available > 0 AND title LIKE ? LIMIT 10',
     [`%${q}%`]
   );
   res.json(rows);
