@@ -553,8 +553,9 @@ document.addEventListener('DOMContentLoaded', function() {
       if (window.showUserAvatar) window.showUserAvatar(user.name, user.role, user.email);
     }
   } else {
-    showSection('student');
-    showStudentForm('login');
+    document.getElementById('dashboard').classList.remove('hidden');
+    document.getElementById('student-section').classList.add('hidden');
+    document.getElementById('admin-section').classList.add('hidden');
   }
   hideAuthUIIfLoggedIn();
   setupAuthNavigation();
